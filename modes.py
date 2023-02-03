@@ -15,7 +15,7 @@ body = models.TextField()
 publish = models.DateTimeField(default=timezone.now)
 created = models.DateTimeField(auto_now_add=True)
 updated = models.DateTimeField(auto_now=True)
-status = models.CharField(max_length=2,
+status = models.CharField(max_length=2,)
 choices=Status.choices,
 default=Status.DRAFT)
 class Meta:
